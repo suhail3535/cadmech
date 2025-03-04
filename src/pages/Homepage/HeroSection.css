@@ -1,6 +1,5 @@
 .hero-section {
     background-color: #FFF4E5;
-    /* Light Beige Background */
     padding: 50px 10%;
     font-family: Arial, sans-serif;
 }
@@ -12,7 +11,6 @@
     flex-wrap: wrap;
 }
 
-/* Left Section */
 .text-content {
     flex: 1;
     max-width: 55%;
@@ -47,7 +45,6 @@
     line-height: 1.6;
 }
 
-/* CTA Button */
 .cta-button {
     background-color: #E96A0A;
     color: white;
@@ -63,7 +60,6 @@
     background-color: #d15406;
 }
 
-/* Right Section */
 .image-content {
     flex: 1;
     max-width: 40%;
@@ -76,7 +72,6 @@
     max-width: 350px;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .hero-content {
         flex-direction: column;

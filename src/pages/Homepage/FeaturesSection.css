@@ -1,0 +1,106 @@
+.feature-section {
+    width: 100%;
+    min-height: 400px;
+    padding: 40px 0px;
+
+    background-image: url("../../assets/sun.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+
+    width: 50%;
+    max-width: 1000px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+.feature-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .feature-container {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+    .feature-section {
+        background-size: cover;
+
+        background-position: left top;
+        min-height: 300px;
+
+        padding: 50px 0;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+
+        place-items: center;
+        width: 60%;
+        gap: 25px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+
+
+    .feature-section {
+        background-size: cover;
+
+        background-position: left top;
+        min-height: 300px;
+
+        padding: 50px 0;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+
+        place-items: center;
+        width: 60%;
+        gap: 25px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
