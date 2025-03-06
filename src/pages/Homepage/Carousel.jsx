@@ -1,43 +1,46 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css';
-
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Carousel.css";
+import image1 from "../../assets/carusel.png";
 const Carousel = () => {
   const settings = {
-    dots: true, // Shows navigation dots
-    infinite: true, // Infinite loop
-    speed: 1000, // Transition speed (ms)
-    slidesToShow: 1, // Show 1 slide at a time
-    slidesToScroll: 1, // Scroll 1 slide at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000, // Time per slide (ms)
-    arrows: false, // Hide next/prev arrows
-    pauseOnDotsHover: true, // Pause when hovering over dots
-    pauseOnFocus: true, // Pause when interacting with dots
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    pauseOnDotsHover: true,
+    pauseOnFocus: true,
   };
 
   return (
-    <div className='carousel-container'>
+    <div className="carousel-container">
       <Slider {...settings}>
-        <div>
-          <img
-            src='https://www.cadmech.co.in/images/img/about_us/CIM-Setup-Pune.webp'
-            alt='Slide 1'
-          />
+        <div className="carousel-slide">
+          <img src={image1} alt="image-1" />
+          <div className="carousel-text">
+            CUTTING-EDGE, USER-FRIENDLY <br />
+            TECHNOLOGY INTEGRATED WITH IOT, <br /> AR/VR, AND SIMULATION TOOLS
+          </div>
         </div>
-        <div>
+        <div className="carousel-slide">
           <img
-            src='https://www.cadmech.co.in/images/img/about_us/CIM-Setup-Pune.webp'
-            alt='Slide 2'
+            src="https://www.cadmech.co.in/images/img/about_us/CIM-Setup-Pune.webp"
+            alt="Slide 2"
           />
+          <div className="carousel-text">Innovative Solutions</div>
         </div>
-        <div>
+        <div className="carousel-slide">
           <img
-            src='https://www.cadmech.co.in/images/img/about_us/CIM-Setup-Pune.webp'
-            alt='Slide 3'
+            src="https://www.cadmech.co.in/images/img/about_us/CIM-Setup-Pune.webp"
+            alt="Slide 3"
           />
+          <div className="carousel-text">Transforming Ideas into Reality</div>
         </div>
       </Slider>
     </div>

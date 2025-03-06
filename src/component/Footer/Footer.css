@@ -1,111 +1,156 @@
-/* Footer Styling */
 .footer {
-    background-color: #000;
-    color: white;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: auto;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  gap: 30px;
 }
 
-/* Left Section (Logo & Contact) */
 .footer-left {
-    max-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 50%;
 }
+.location-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+.location-links div {
+  display: flex;
 
+  gap: 10px;
+}
+.location-links div p {
+  font-size: 14px;
+  cursor: pointer;
+}
+.right-part {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 50%;
+}
 .footer-logo {
-    width: 150px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.footer-logo img {
+  width: 100%;
 }
 
-.footer-left p {
-    margin: 5px 0;
-    font-size: 14px;
+.location-icon {
+  font-size: 50px;
+  color: rgba(241, 81, 7, 0.915);
+}
+.icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: rgba(241, 81, 7, 0.915);
+}
+.vertical-separator {
+  width: 1px;
+  background: linear-gradient(to bottom, #e53935, #ff9800);
+  display: inline-block;
 }
 
-.footer-left a {
-    color: white;
-    text-decoration: none;
-}
+.footer-right {
+  display: flex;
+  flex-direction: column;
 
-.footer-left a:hover {
-    color: #ff9800;
+  gap: 100px;
 }
-
-/* Middle Section (Quick Links) */
-.footer-middle h4,
-.footer-right h4 {
-    margin-bottom: 10px;
-    font-size: 16px;
+.footer-right p {
+  font-size: 12px;
 }
-
+.footer-middle,
+.footer-right h3 {
+  font-size: 16px;
+}
 .footer-middle ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
 }
 
 .footer-middle ul li {
-    margin: 5px 0;
+  margin: 8px 0;
 }
 
-.footer-middle ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-.footer-middle ul li a:hover {
-    color: #ff9800;
-}
-
-/* Right Section (Social Links) */
 .social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+  color: rgba(241, 81, 7, 0.915);
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #ff6600;
+}
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+  .footer-container {
+    display: block;
+    width: 90%;
+  }
+  .footer-left {
+    width: 80%;
+  }
+  .vertical-separator {
+    width: 95%;
+    background: linear-gradient(to bottom, #e53935, #ff9800);
+    display: inline-block;
+    height: 1px;
+    margin: 30px auto;
+  }
+  .right-part {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+  }
+  .footer-middle h3 {
+    text-align: left;
+    font-size: 13px;
+  }
+  .footer-logo img {
+    width: 100px;
+  }
 }
 
-.social-icons a {
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #ff9800;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+  .footer-container {
+    width: 90%;
+    margin: auto;
+  }
+  .vertical-separator {
+    width: 1px;
+    background: linear-gradient(to bottom, #e53935, #ff9800);
+    display: inline-block;
+  }
+  .footer-middle h3 {
+    text-align: left;
+    margin-bottom: 10px;
     font-size: 14px;
-    border-top: 1px solid #333;
-    padding-top: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-middle,
-    .footer-right {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
+  }
+  .right-part {
+    gap: 10px;
+  }
 }

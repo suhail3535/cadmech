@@ -1,87 +1,100 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Section Styling */
 .form-section {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
 
-    padding: 50px;
-    background-image: url("../../assets/sunrise.jpg");
-    opacity: .8;
-    /* Change this to your image path */
-    background-size: cover;
-    background-position: center;
-    color: white;
+  padding: 50px;
+  background-image: url("../../assets/sunrise.jpg");
+  opacity: 0.8;
+
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
 .content-wrapper {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Left Content */
 .content {
-    width: 40%;
-    font-size: 20px;
-    line-height: 1.5;
+  width: 40%;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
-/* Right Form */
 .form-container {
-    width: 40%;
+  width: 40%;
 
-
-    padding: 20px;
-
+  padding: 20px;
 }
 
-/* Form Fields */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 input,
 textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+
+  font-size: 16px;
+  outline: none;
+}
+
+.submit-button {
+  border: none;
+  background-image: linear-gradient(to right, #e53935, #ff9800);
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  margin: auto;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 300px) and (max-width: 421px) {
+  .form-section {
     width: 100%;
-    padding: 10px;
-    border: none;
-
-    font-size: 16px;
-    outline: none;
-}
-
-/* Button */
-button {
-    padding: 10px;
-    border: none;
-    background: #ff5722;
-    color: white;
-    font-size: 18px;
-
+    margin: auto;
+  }
+  .content-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .content,
+  .form-container {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .submit-button {
+    width: 50%;
+    margin: auto;
     cursor: pointer;
+  }
 }
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+  .form-section {
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .form-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content,
-    .form-container {
-        width: 90%;
-    }
+  .content,
+  .form-container {
+    width: 70%;
+    margin: auto;
+  }
+  .content-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .submit-button {
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+  }
 }

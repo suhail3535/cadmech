@@ -1,86 +1,68 @@
-import React from 'react';
-import './Footer.css';
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import logo from '../../assets/logo.png';
+import React from "react";
+import footerLogo from "../../assets/cadmech.png";
+
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { TbPhone } from "react-icons/tb";
+import { IoLocationOutline } from "react-icons/io5";
+
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className='footer-container'>
-        {/* Logo & Contact Info */}
-        <div className='footer-left'>
-          <img src={logo} alt='CADMECH Logo' className='footer-logo' />
-          <p>
-            S. N. 8/11, Plot No. 30, Near Abhinav Pharmacy College, Narhe, Pune
-            - 411041
-          </p>
-          <p>📞 +91 8380001463</p>
-          <p>
-            📧 <a href='mailto:mktg@cadmech.co.in'>mktg@cadmech.co.in</a>
-          </p>
-          <p>
-            📧 <a href='mailto:admin@cadmech.co.in'>admin@cadmech.co.in</a>
-          </p>
-        </div>
-
-        {/* Quick Links */}
-        <div className='footer-middle'>
-          <h4>Quick Links:</h4>
-          <ul>
-            <li>
-              <a href='/'>Home</a>
-            </li>
-            <li>
-              <a href='/about'>About Us</a>
-            </li>
-            <li>
-              <a href='/products'>Our Products</a>
-            </li>
-            <li>
-              <a href='/other-products'>Other Products</a>
-            </li>
-            <li>
-              <a href='/partners'>Our Partners</a>
-            </li>
-            <li>
-              <a href='/clients'>Our Clients</a>
-            </li>
-            <li>
-              <a href='/contact'>Contact Us</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Social Links */}
-        <div className='footer-right'>
-          <h4>Stay Connected:</h4>
-          <div className='social-icons'>
-            <a
-              href='https://facebook.com'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href='https://instagram.com'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href='https://linkedin.com'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaLinkedinIn />
-            </a>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-left">
+          <div className="footer-logo">
+            <img src={footerLogo} alt="footerLogo" />
+          </div>
+          <div className="location-links">
+            <div>
+              <IoLocationOutline className="location-icon" />
+              <p>
+                S. N. 8/11, Plot No. 30, Near Abhinav Pharmacy College, Narhe,
+                Pune - 411041
+              </p>
+            </div>
+            <div>
+              <TbPhone className="icon" />
+              <p>+91 8380001463</p>
+            </div>
+            <div>
+              <CiMail className="icon" />
+              <p>
+                mktg@cadmech.co.in
+                <br /> admin@cadmech.co.in
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='footer-bottom'>
-        <p>Copyright ©2025 All rights reserved</p>
+        <div className="vertical-separator"></div>
+        <div className="right-part">
+          <div className="footer-middle">
+            <h3>Quick Links:</h3>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Our Products</li>
+              <li>Other Products</li>
+              <li>Our Partners</li>
+              <li>Our Clients</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div className="footer-right">
+            <div>
+              <h3>Stay Connected:</h3>
+              <div className="social-icons">
+                <FaFacebook className="social-icon" />
+                <FaInstagram className="social-icon" />
+                <FaLinkedin className="social-icon" />
+              </div>
+            </div>
+            <p>Copyright &copy; 2025 All rights reserved</p>
+          </div>
+        </div>
       </div>
     </footer>
   );

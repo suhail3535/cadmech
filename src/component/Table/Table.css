@@ -1,0 +1,59 @@
+.specs-container {
+  width: 60%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.specs-table tr.even-row {
+  background-color: #fff8f8;
+  cursor: pointer;
+}
+
+.specs-table tr.odd-row {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.specs-table tr:hover {
+  background-color: #ebd5d5;
+  transition: 0.3s;
+}
+
+.specs-table td,
+th {
+  /* border: 1px solid #ddd; */
+  padding: 12px;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.spec-label {
+  width: 50%;
+  text-align: left;
+  color: #555;
+  cursor: pointer;
+}
+
+.spec-value {
+  text-align: left;
+  color: #555;
+}
+span {
+  font-weight: bold;
+  margin: 5px;
+}
+@media screen and (min-width: 300px) and (max-width: 420px) {
+  .specs-container {
+    width: 90%;
+    margin: auto;
+  }
+}

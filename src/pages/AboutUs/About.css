@@ -1,0 +1,193 @@
+.about-section-container {
+  background-color: #fdf2e9;
+}
+
+.product-hero-section {
+  background: url("../../assets/aboutCadmech.png") center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-hero-section h2 {
+  font-size: 25px;
+}
+.about-content-wrapper {
+  width: 60%;
+
+  padding: 30px 0px 80px;
+  margin: auto;
+}
+.about-cadmech {
+  text-align: justify;
+  color: #555;
+  font-size: 12px;
+  padding: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.mission-section {
+  position: relative;
+
+  width: 100%;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.content-box {
+  position: relative;
+  color: #0a0a0a;
+  font-weight: 500;
+  padding: 20px;
+  width: 70%;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+  padding: 90px;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.tab {
+  background: linear-gradient(to right, #d64c2e, #f38d4c);
+  padding: 8px 10px;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  border: none;
+}
+
+.team-tab {
+  background: linear-gradient(to right, #d64c2e, #f38d4c);
+  padding: 8px 10px;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  border: none;
+}
+
+.decorative-circle {
+  position: absolute;
+  position: absolute;
+  right: 83px;
+  bottom: -30px;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+
+.decorative-circle img {
+  width: 90%;
+  height: auto;
+  margin-top: 100px;
+}
+.our-leader {
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 140px;
+}
+.our-leader div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.our-leader h4 {
+  font-size: 12px;
+  color: #555;
+  text-align: justify;
+  margin-top: 10px;
+}
+.our-leader p {
+  font-size: 12px;
+  color: #555;
+  text-align: justify;
+}
+.our-leader img {
+  width: 80%;
+  object-fit: contain;
+}
+@media screen and (min-width: 300px) and (max-width: 420px) {
+  .about-content-wrapper {
+    width: 90%;
+  }
+  .content-box {
+    width: 100%;
+    padding: 20px;
+  }
+  .decorative-circle {
+    position: absolute;
+    position: absolute;
+    right: 103px;
+    bottom: -69px;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+  }
+  .decorative-circle img {
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
+  }
+  .tab {
+    top: -40px;
+  }
+  .our-leader {
+    width: 100%;
+  }
+  .our-leader h4 {
+    font-size: 9px;
+  }
+  .our-leader p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .about-content-wrapper {
+    width: 90%;
+  }
+  .content-box {
+    width: 80%;
+    padding: 50px;
+  }
+  .decorative-circle {
+    position: absolute;
+    position: absolute;
+    right: -74px;
+    bottom: -69px;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+  }
+  .decorative-circle img {
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+  }
+  .tab {
+    top: -40px;
+  }
+  .our-leader {
+    width: 100%;
+  }
+  .our-leader h4 {
+    font-size: 10px;
+  }
+  .our-leader p {
+    font-size: 10px;
+  }
+}

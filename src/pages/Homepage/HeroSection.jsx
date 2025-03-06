@@ -1,21 +1,22 @@
-import React from 'react';
-import './HeroSection.css';
-import studentImage from '../../assets/student-image.png'; // Update with the actual image path
+import React from "react";
+import "./HeroSection.css";
+import studentImage from "../../assets/student-image.png"; // Update with the actual image path
+import PartnersSection from "./PartnerSection";
 
 const HeroSection = () => {
   return (
-    <section className='hero-section'>
-      <div className='hero-content'>
+    <section className="hero-section">
+      <div className="hero-content">
         {/* Left Section - Text Content */}
-        <div className='text-content'>
+        <div className="text-content">
           <h1>
-            With <span className='highlight'>Cadmech</span>, you create <br />
-            <span className='bold-text'>transformative learning environs</span>
+            With <span className="highlight">Cadmech</span>, you create <br />
+            <span className="bold-text">transformative learning environs</span>
           </h1>
-          <p className='subheading'>
+          <p className="subheading">
             Inspire curiosity, creativity, and confidence
           </p>
-          <p className='description'>
+          <p className="description">
             Since 1997, CadMech Engineering Pvt. Ltd. has been a pioneer in
             delivering innovative, high-performance lab equipment that bridges
             the gap between academic aspirations and industry demands. With over
@@ -26,14 +27,15 @@ const HeroSection = () => {
             and customer-first approach make us more than a supplier - we are a
             trusted partner in educational transformation.
           </p>
-          <button className='cta-button'>Our Brands</button>
+          <button className="cta-button">Our Brands</button>
         </div>
 
         {/* Right Section - Image */}
-        <div className='image-content'>
-          <img src={studentImage} alt='Student' />
+        <div className="image-content">
+          <img src={studentImage} alt="Student" />
         </div>
       </div>
+      <PartnersSection />
     </section>
   );
 };
